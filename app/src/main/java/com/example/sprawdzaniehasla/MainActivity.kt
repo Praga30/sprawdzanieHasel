@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val x=""
         val Wprowadzanie = findViewById<EditText>(R.id.Wprowadzanie)
         val Potwierdzanie = findViewById<EditText>(R.id.Potwierdzanie)
         val Zgodnosc = findViewById<CheckBox>(R.id.Zgodne)
@@ -42,13 +43,14 @@ class MainActivity : AppCompatActivity() {
                 if (haslo.any { !it.isLetterOrDigit() } && potwierdzeniehasla.any { !it.isLetterOrDigit() }) {
                     ZnakSpec.isChecked = haslo.any()
                 }
-                if (Zgodnosc.isChecked && WielkaLitera.isChecked && MalaLitera.isChecked && Cyfra.isChecked && ZnakSpec.isChecked) {
+                if ( WielkaLitera.isChecked && MalaLitera.isChecked && Cyfra.isChecked && ZnakSpec.isChecked) {
                     val komunikat = android.app.AlertDialog.Builder(this)
                     komunikat.setTitle("Hasło spełnia wymagania")
                     komunikat.setMessage("Hasło spełnia wymagania, możesz z niego bezpiecznie korzystać")
                     komunikat.setPositiveButton("OK", null)
                     komunikat.setNegativeButton("Odrzuc", null)
                     komunikat.show()
+                    Zgodnosc.isChecked=x.any()
 
                 } else
                 {
@@ -58,6 +60,7 @@ class MainActivity : AppCompatActivity() {
                     komunikat.setPositiveButton("OK", null)
                     komunikat.setNegativeButton("Odrzuc", null)
                     komunikat.show()
+                    Zgodnosc.isChecked=x.any()
                 }
             }
         }
