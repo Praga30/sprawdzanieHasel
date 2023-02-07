@@ -7,64 +7,69 @@
     tools:context=".MainActivity">
 
     <CheckBox
-        android:id="@+id/Cyfr"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Cyfra"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513" />
-
-    <CheckBox
-        android:id="@+id/wielkalit"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Wielka Litera"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373" />
-
-    <CheckBox
         android:id="@+id/Zgodne"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Zgodnosc hasel"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.303" />
 
     <CheckBox
-        android:id="@+id/znakspec"
-        android:layout_width="100dp"
+        android:id="@+id/Cyfr"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Znak Specjalny"
+        android:text="Cyfra"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <CheckBox
+        android:id="@+id/malalit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Mala Litera"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <CheckBox
+        android:id="@+id/znakspec"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Znak Specjalny"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.582" />
 
     <CheckBox
-        android:id="@+id/malalit"
-        android:layout_width="100dp"
+        android:id="@+id/wielkalit"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Mala Litera"
+        android:text="Wielka Litera"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.373" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -97,6 +102,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:hint="Wprowadz Haslo"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -109,6 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:hint="Potwierdz Haslo"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -118,12 +125,14 @@
 
     <Button
         android:id="@+id/Sprawdz"
-        android:layout_width="117dp"
-        android:layout_height="55dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
         android:text="Sprawdz Haslo"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674" />
+        app:layout_constraintVertical_bias="0.718" />
 </androidx.constraintlayout.widget.ConstraintLayout>
