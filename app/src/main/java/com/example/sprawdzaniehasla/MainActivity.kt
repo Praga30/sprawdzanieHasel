@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
             var haslo = Wprowadzanie.text.toString()
             var potwierdzeniehasla = Potwierdzanie.text.toString()
             if (haslo.isEmpty() && potwierdzeniehasla.isEmpty()) {
-                findViewById<EditText>(R.id.Wprowadzanie).setText("Pole nie może byc puste")
+                Wprowadzanie.error = ("Pole nie moze byc puste")
+                Potwierdzanie.error = ("Pole nie moze byc puste")
             } else {
                 if (haslo == potwierdzeniehasla) {
                     Zgodnosc.isChecked = haslo.any()
