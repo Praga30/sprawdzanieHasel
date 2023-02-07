@@ -93,7 +93,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/wprowadzanie"
+        android:id="@+id/Wprowadzanie"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:hint="Wprowadz Haslo"
@@ -117,7 +117,7 @@
         app:layout_constraintVertical_bias="0.169" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Sprawdz"
         android:layout_width="117dp"
         android:layout_height="55dp"
         android:text="Sprawdz Haslo"
